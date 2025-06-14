@@ -1,0 +1,13 @@
+services:
+  nginx:
+    container_name: dockge-nginx
+    image: nginx:latest
+    restart: unless-stopped
+    expose:
+      - 80
+#    ports:
+#      - 8080:80
+    volumes:
+      # - $SaveData/www-html:$NginxHtml
+      - ./www-html:$NginxHtml
+networks: {}
