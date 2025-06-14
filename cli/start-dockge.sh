@@ -35,7 +35,7 @@ SaveData=
 EOF
 fi
 
-exit 0;
+# exit 0;
 # cat << EOF > ./data/compose-task.js
 # const CommonEvn = "common.env";
 # const AppData = "/app/data";
