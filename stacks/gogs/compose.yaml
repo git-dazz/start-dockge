@@ -1,0 +1,10 @@
+services:
+  gogs:
+    restart: unless-stopped
+    image: gogs/gogs
+    ports:
+      - 8022:22
+      - 3000:3000
+    volumes:
+      - $SaveData/gogs-data:/data
+networks: {}
